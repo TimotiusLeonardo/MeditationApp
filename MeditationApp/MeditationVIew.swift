@@ -74,5 +74,6 @@ struct MeditationVIew_Previews: PreviewProvider {
     
     static var previews: some View {
         MeditationView(meditationVM: meditationVM)
+            .environmentObject(AudioManager())
     }
 }
